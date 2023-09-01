@@ -5,7 +5,7 @@ import requests
 
 app = Flask(__name__)
 API_URL = 'https://app.ylytic.com/ylytic/test'
-def fetch_comments() -> list[Dict[str, Union[str, int]]]:
+def fetch_comments() -> list[Dict[str, Any]:
     try:
         response = requests.get(API_URL)
         response.raise_for_status() 
